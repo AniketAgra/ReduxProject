@@ -1,15 +1,19 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { asyncloginuser } from '../store/actions/userActions'
 import { useDispatch } from 'react-redux'
 
 const Login = () => {
   const dispatch = useDispatch();
-  const { register, reset, handleSubmit } = useForm()
+  const { register, reset, handleSubmit } = useForm();
+  const navigate = useNavigate();
 
   const LoginHandler = (user) => {
     dispatch(asyncloginuser(user));
+    if(user){
+      navigate('/products');
+    }
   }
 
   return (

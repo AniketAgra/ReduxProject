@@ -1,10 +1,11 @@
 import axios from "../../api/axiosconfig"
-import { loaduser } from "../reducers/userSlice";
+import { loaduser,removeuser } from "../reducers/userSlice";
 
 export const asyncloginuser = (user) => async (dispatch, getState) => {
     try{
         const {data} = await axios.get(`/users?email=${user.email}&password=${user.password}`)
-        localStorage.setItem("user", JSON.stringify(data[0]));
+        localStorage.setItem("users", JSON.stringify(data[0]));
+        dispatch(loaduser(data[0]));
     }catch(error){
         console.log(error);
     }
@@ -21,7 +22,7 @@ export const asyncregisterusers = (user) => async (dispatch, getState) => {
     }
 }
 
-export const asynccurrentuser = () => async (dispatch, getState) => {
+export const asynccurrentusers = () => async (dispatch, getState) => {
     try{
         const user = JSON.parse(localStorage.getItem("user"));
         if(user){
@@ -37,7 +38,8 @@ export const asynccurrentuser = () => async (dispatch, getState) => {
 
 export const asynclogoutuser = () => async (dispatch, getState) => {
     try{
-        localStorage.removeItem("user");
+        localStorage.removeItem("users");
+        dispatch(removeuser());
         //OR
         // localStorage.setItem("user",null);
     }catch(error){

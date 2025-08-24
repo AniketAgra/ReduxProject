@@ -1,16 +1,11 @@
 {
   "products": [
     {
-      "id": "1",
-      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-      "price": 109.95,
-      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
-      "rating": {
-        "rate": 3.9,
-        "count": 120
-      }
+      "id": "kE-qKHjy5H5QGwfeby22j",
+      "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
+      "title": "Dummy",
+      "description": "Tasty!!",
+      "price": "199"
     }
   ],
   "users": [
@@ -22,12 +17,6 @@
       "isAdmin": true
     },
     {
-      "id": "15ca"
-    },
-    {
-      "id": "f019"
-    },
-    {
       "id": "Cftln1bgF_TYztmyULDSA",
       "username": "aniketagrawal",
       "email": "sfsfs@gmail.com",
@@ -35,202 +24,11 @@
       "isAdmin": false
     },
     {
-      "id": "1b7b"
-    },
-    {
-      "id": "3909"
-    },
-    {
-      "id": "ad4e"
-    },
-    {
-      "id": "57eb"
-    },
-    {
-      "id": "03e7"
-    },
-    {
-      "id": "b422"
-    },
-    {
-      "id": "7b80"
-    },
-    {
-      "id": "18ce"
-    },
-    {
-      "id": "483c"
-    },
-    {
-      "id": "2dc2"
-    },
-    {
-      "id": "dc96"
-    },
-    {
-      "id": "cd80"
-    },
-    {
-      "id": "f0be"
-    },
-    {
-      "id": "aab9"
-    },
-    {
-      "id": "5820"
-    },
-    {
-      "id": "537d"
-    },
-    {
-      "id": "ea00"
-    },
-    {
-      "id": "c521"
-    },
-    {
-      "id": "6e54"
-    },
-    {
-      "id": "d451"
-    },
-    {
-      "id": "459b"
-    },
-    {
-      "id": "c512"
-    },
-    {
-      "id": "0ee1"
-    },
-    {
-      "id": "78c1"
-    },
-    {
-      "id": "b5c0"
-    },
-    {
-      "id": "de66"
-    },
-    {
-      "id": "60bd"
-    },
-    {
-      "id": "cea2"
-    },
-    {
-      "id": "9795"
-    },
-    {
-      "id": "788b"
-    },
-    {
-      "id": "754d"
-    },
-    {
-      "id": "5d3b"
-    },
-    {
-      "id": "d51a"
-    },
-    {
-      "id": "29aa"
-    },
-    {
-      "id": "9624"
-    },
-    {
-      "id": "1fc0"
-    },
-    {
-      "id": "fa32"
-    },
-    {
-      "id": "fbf5"
-    },
-    {
-      "id": "da2c"
-    },
-    {
-      "id": "5314"
-    },
-    {
-      "id": "d27c"
-    },
-    {
-      "id": "cda9"
-    },
-    {
-      "id": "9972"
-    },
-    {
-      "id": "35f5"
-    },
-    {
-      "id": "35ae"
-    },
-    {
-      "id": "cf66"
-    },
-    {
-      "id": "409c"
-    },
-    {
-      "id": "9f80"
-    },
-    {
-      "id": "ebd4"
-    },
-    {
-      "id": "861e"
-    },
-    {
-      "id": "8e99"
-    },
-    {
-      "id": "dc5b"
-    },
-    {
-      "id": "9074"
-    },
-    {
-      "id": "0be2"
-    },
-    {
-      "id": "2a7e"
-    },
-    {
-      "id": "833f"
-    },
-    {
-      "id": "abee"
-    },
-    {
-      "id": "1d8d"
-    },
-    {
-      "id": "719e"
-    },
-    {
-      "id": "7feb"
-    },
-    {
-      "id": "62dd"
-    },
-    {
-      "id": "e211"
-    },
-    {
-      "id": "2018"
-    },
-    {
-      "id": "c23e"
-    },
-    {
-      "id": "6374"
-    },
-    {
-      "id": "8556"
+      "id": "MQT958DqubkcMBoVrwiAW",
+      "username": "AMAMAB",
+      "email": "ans@gmail.com",
+      "password": "12345",
+      "isAdmin": false
     }
   ],
   "cart": []
