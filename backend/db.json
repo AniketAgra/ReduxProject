@@ -5,17 +5,10 @@
       "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
       "title": "Dummy",
       "description": "Tasty!!",
-      "price": "199"
+      "price": "179"
     }
   ],
   "users": [
-    {
-      "id": "P5absfO-uMrdagBGVD6hy",
-      "username": "bpane.kh061622.0lwahndkqtm2.9elinvw0vg72@gmail.com",
-      "email": "aniketa@gmail.com",
-      "password": "2334451541",
-      "isAdmin": true
-    },
     {
       "id": "Cftln1bgF_TYztmyULDSA",
       "username": "aniketagrawal",

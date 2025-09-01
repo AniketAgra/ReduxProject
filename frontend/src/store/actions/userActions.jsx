@@ -46,3 +46,23 @@ export const asynclogoutuser = () => async (dispatch, getState) => {
         console.log(error);
     }
 }
+
+export const asyncUpdateProfile = (id, profile) => async (dispatch, getState) => {
+    try{
+        const response = await axios.patch('/users/'+ id, profile);
+        localStorage.setItem("users", JSON.stringify(response.data));
+        dispatch(loaduser(response.data));
+    }catch(error){
+        console.log(error);
+    }
+}
+
+
+export const asyncDeleteAccount = (id) => async (dispatch, getState) => {
+    try{
+        await axios.delete('/users/'+ id)
+        dispatch(asynclogoutuser());
+    }catch(error){
+        console.log(error);
+    }
+}
