@@ -10,10 +10,10 @@ import { useSelector } from 'react-redux'
 import UserProfile from '../pages/user/UserProfile'
 import PageNotFound from '../PageNotFound'
 import AuthWrapper from './AuthWrapper'
+import Cart from '../pages/Cart'
 
 const MainRoutes = () => {
   const {users} = useSelector((state) => state.userReducer);
-  console.log(users);
   return (
     <div>
       <Routes>
@@ -34,6 +34,12 @@ const MainRoutes = () => {
         <Route path='/product/:id' element={
           <AuthWrapper>
             <ProductDetails />
+          </AuthWrapper>
+        } />
+
+        <Route path='/cart' element={
+          <AuthWrapper>
+            <Cart />
           </AuthWrapper>
         } />
 

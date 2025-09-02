@@ -26,7 +26,9 @@ const NavBar = () => {
           <NavLink to='/admin/user-profile' className='text-white'>
             Settings
           </NavLink>
-          
+          <NavLink to='/cart' className='text-white'>
+            Cart
+          </NavLink>
         </>
       ) : (
         <>

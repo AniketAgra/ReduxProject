@@ -13,6 +13,7 @@ const Register = () => {
   const RegisterHandler = (user) => {
     user.id = nanoid();
     user.isAdmin = false;
+    user.cart = [];
 
     dispatch(asyncregisterusers(user)); // Dispatch the async action
 

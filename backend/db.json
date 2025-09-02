@@ -3,9 +3,16 @@
     {
       "id": "kE-qKHjy5H5QGwfeby22j",
       "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
-      "title": "Dummy",
+      "title": "Pizza",
       "description": "Tasty!!",
       "price": "179"
+    },
+    {
+      "id": "FrYJb6mLpLlhXXRHtwvuY",
+      "image": "https://imgs.search.brave.com/ZdzwEqimcGJd6DYoQkx8odJs_tjjiIDF4urGfQiO1sk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTY4/MzQwMDgzL3Bob3Rv/L2Nob29zZW15cGxh/dGUtaGVhbHRoeS1m/b29kLWFuZC1wbGF0/ZS1vZi11c2RhLWJh/bGFuY2VkLWRpZXQt/cmVjb21tZW5kYXRp/b24uanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVM1T1l1UGct/bjFmdU9PZ1JlUWY5/eFB1RmdBMWktVU81/NFVqMnUxUkQ3aVU9",
+      "title": "Platter",
+      "description": "Veggies delight at your ease.",
+      "price": "299"
     }
   ],
   "users": [
@@ -14,14 +21,25 @@
       "username": "aniketagrawal",
       "email": "sfsfs@gmail.com",
       "password": "44444",
-      "isAdmin": false
+      "isAdmin": true,
+      "cart": [
+        {
+          "productId": "kE-qKHjy5H5QGwfeby22j",
+          "quantity": 1
+        },
+        {
+          "productId": "FrYJb6mLpLlhXXRHtwvuY",
+          "quantity": 3
+        }
+      ]
     },
     {
       "id": "MQT958DqubkcMBoVrwiAW",
       "username": "AMAMAB",
       "email": "ans@gmail.com",
       "password": "12345",
-      "isAdmin": false
+      "isAdmin": false,
+      "cart": []
     }
   ],
   "cart": []
