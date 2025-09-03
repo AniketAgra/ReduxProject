@@ -3,22 +3,25 @@ import {asynccurrentusers} from './store/actions/userActions'
 import { useDispatch, useSelector } from 'react-redux';
 import MainRoutes from './routes/MainRoutes';
 import Nav from './components/NavBar';
-import {asyncloadproducts} from './store/actions/productActions';
+// import {asyncloadproducts} from './store/actions/productActions';
 
 const App = () => {
-  const data = useSelector((state) => state);
   const dispatch = useDispatch();
 
+  const {users} = useSelector((state) => state.userReducer);
+  // const {products} = useSelector((state) => state.productReducer);
 
   useEffect(() => {
+    !users && dispatch(asynccurrentusers());
+  }, [users]);
 
-    dispatch(asynccurrentusers());
-    dispatch(asyncloadproducts());
-  }, []);
+  // useEffect(() => {
+  //   products.length === 0 && dispatch(asyncloadproducts());
+  // }, [products]);
 
 
   return (
-    <div className='w-screen h-screen font-thin text-white bg-gray-800 overflow-auto'>
+    <div className='w-screen font-thin text-white bg-gray-800'>
       <Nav/>
       <MainRoutes />
     </div>

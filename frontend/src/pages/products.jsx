@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { useSelector,useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom';
 import { asyncUpdateProfile } from '../store/actions/userActions';
+import useInfiniteProducts from '../utils/useInfiniteProducts';
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 const Products = () => {
   const dispatch = useDispatch();
-  const { userReducer : { users }, productReducer: {products} } = useSelector((state) => state);
+  const {users} = useSelector((state) => state.userReducer);
+  // const {products} = useSelector((state) => state.productReducer);
+
+  //Lazy Loading
+
+  //custom hook
+  const { fetchProducts, hasMore ,products} = useInfiniteProducts();
 
   const AddtoCardHandler = (id) => {
     const cartArray = Array.isArray(users.cart) ? users.cart : [];
@@ -40,7 +48,20 @@ const Products = () => {
   });
 
   return (
-    products.length > 0 ? <div className='overflow-auto flex flex-wrap'>{renderproduct}</div> : <div>No Products Found</div>
+    products.length > 0 ? (
+      <InfiniteScroll
+        dataLength={products.length}
+        next={fetchProducts}
+        hasMore={hasMore}
+        loader={<h4>Loading...</h4>}
+      >
+        <div className="overflow-auto flex flex-wrap">
+          <Suspense fallback={<div className='text-center text-5xl text-red-300'>Loading...</div>}>
+            {renderproduct}
+          </Suspense>
+        </div>
+      </InfiniteScroll>
+    ) : <div>No Products Found</div>
   )
 }
 
